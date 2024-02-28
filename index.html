@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Text Encryptor</title>
+    </head>
+    <body>
+        <header>
+            <h1><img id="logo" src="imagenes/LogoCora-png.png" alt="logo CORA"> </h1>
+        </header>
+        <main>
+            <section id="ingresado">
+                <div id="input">
+                    <textarea  id="usuario" placeholder="Enter text here" required></textarea>
+                </div>
+                <div id="caja-botones">
+                    <p class="parrafos"> (!) Only lowercase letters and no accents.</p>
+                    <button type="submit" id="encriptar" onclick="encrypt();">Encrypt</button>
+                    <button id="desencriptar" onclick="decrypt()">Decrypt</button>
+                </div>
+            </section>
+            <section id="resultado">
+                <div id="sinresultado">
+                    <img id="muneco" src="imagenes/Muneco.png" alt="Ningún texto aquí">
+                    <p class="parrafos">No text was found</p>
+                    <p class="parrafos">Enter the text you want to encrypt or decrypt</p>
+                </div>
+                <div id="caja-textonuevo">
+                    <textarea id="textoNuevo" disabled></textarea>
+                </div>
+                <div id="botones-resultado">
+                    <button id="copiar" onclick="copiar()">Copiar</button>
+                    <button id="restablecer" onclick="reset()">Nuevo</button>
+                </div>
+            </section>
+            
+        </main>
+        <footer>
+            <p id="rodapie">© Copyright - David Tapias - 2024</p>
+        </footer>
+        <script src="app.js"></script>
+    </body>
+</html>
