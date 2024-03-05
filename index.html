@@ -5,20 +5,27 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
-        <title>¡Text Encryptor!</title>
+        <title>Text Encryptor</title>
     </head>
     <body>
         <header>
+            <div>
             <h1><img id="logo" src="imagenes/LogoCora-png.png" alt="logo CORA"> </h1>
+            </div>
+            <div>
+                <button>instructions</button>
+            </div>
         </header>
         <main>
             <section id="ingresado">
+                <div class="caja-pegar">
+                    <button id="boton-pegar" onclick="copiar()">paste text</button>
+                </div>
                 <div id="input">
                     <textarea  id="usuario" placeholder="Enter text here" required></textarea>
                 </div>
                 <div id="caja-botones">
                     <p class="parrafos">Only lowercase letters and no accents.</p>
-                    <p class="parrafos">Only lowercase letters and no accents</p>
                     <button type="submit" id="encriptar" onclick="encrypt();">Encrypt</button>
                     <button id="desencriptar" onclick="decrypt()">Decrypt</button>
                 </div>
