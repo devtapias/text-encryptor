@@ -64,12 +64,12 @@ function reset(){
     location.reload();
 }
 
-function copiar(){
+function copiar(){ //Boton de copiar texto.
     let texto = document.querySelector('#textoNuevo').value;
     navigator.clipboard.writeText(texto).then();
 }
 
-function pegar(){
+function pegar(){ //Botón de pegar texto.
     navigator.clipboard.readText().then(
         texto => {
             document.querySelector('#usuario').value = texto;
