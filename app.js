@@ -66,11 +66,23 @@ function reset(){
 
 function copiar(){
     let texto = document.querySelector('#textoNuevo').value;
-    var elementoTemporal = document.createElement("textarea");
-    
-    elementoTemporal.value = texto;
-    document.body.appendChild(elementoTemporal);
-    elementoTemporal.select();
-    document.execCommand("copy")
-    document.body.removeChild(elementoTemporal);
+    navigator.clipboard.writeText(texto).then();
+}
+
+function pegar(){
+    navigator.clipboard.readText().then(
+        texto => {
+            document.querySelector('#usuario').value = texto;
+        }
+    )   
+}
+
+function verInstrucciones(){
+    let instrucciones = document.querySelector('#informacion-instrucciones')
+    instrucciones.style.display = 'inline';
+}
+
+function ocultarInstrucciones(){
+    let instrucciones = document.querySelector('#informacion-instrucciones')
+    instrucciones.style.display = 'none'; 
 }

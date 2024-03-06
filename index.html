@@ -9,22 +9,36 @@
     </head>
     <body>
         <header>
-            <div>
+            <div id="caja-logo">
             <h1><img id="logo" src="imagenes/LogoCora-png.png" alt="logo CORA"> </h1>
             </div>
-            <!--
-            <div>
-                <button>instructions</button>
+            <div id="caja-instrucciones">
+                <button id="instructions" onmouseover="verInstrucciones()" onmouseout="ocultarInstrucciones()">instructions</button>
             </div>
-            -->
+            <div id="informacion-instrucciones">
+                <p>Hola!</p>
+                <p>Para encriptar:</p>
+                    <ol>
+                    <li>1. Escribe o pega el texto que deseas encriptar</li>
+                    <li>2. Preciona en el botón Encrypt</li>
+                    <li>3. El mensaje encriptado estará disponible en la parte izquierda</li>
+                    <li>4. Usa el botón Copy para que puedas copiar el texto y enviarlo a quien corresponda</li>
+                </ol>
+                <p>Para Desencriptar:</p>
+                <ol>
+                    <li>1. Copia el mensaje que te enviaron encriptado.</li>
+                    <li>2. Usa el botón Paste Text para pegar el mensaje.</li>
+                    <li>3. Preciona en el botón Decrypt.</li>
+                    <li>4. El mensaje desencriptado estará disponible en la parte izquierda para que puedas leerlo.</li>
+                </ol>
+                <p>Usa el botón Nuevo para empezar de nuevo.</p>
+            </div>
         </header>
         <main>
             <section id="ingresado">
-                <!--
                 <div class="caja-pegar">
-                    <button id="boton-pegar" onclick="copiar()">paste text</button>
+                    <button id="boton-pegar" onclick="pegar()">paste text</button>
                 </div>
-                -->
                 <div id="input">
                     <textarea  id="usuario" placeholder="Enter text here" required></textarea>
                 </div>
