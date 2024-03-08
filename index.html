@@ -16,34 +16,35 @@
                 <button id="instructions" onmouseover="verInstrucciones()" onmouseout="ocultarInstrucciones()">instructions</button>
             </div>
             <div id="informacion-instrucciones">
-                <p>¡Hola!</p>
                 <p>Para encriptar:</p>
                     <ol>
-                    <li>1. Escribe o pega el texto que deseas encriptar</li>
-                    <li>2. Preciona en el botón Encrypt</li>
-                    <li>3. El mensaje encriptado estará disponible en la parte izquierda</li>
-                    <li>4. Usa el botón Copy para que puedas copiar el texto y enviarlo a quien corresponda</li>
+                    <li>1. Escribe o pega el texto que deseas encriptar.</li>
+                    <li>2. Preciona en el botón "Encrypt".</li>
+                    <li>3. El mensaje encriptado estará disponible en la parte izquierda.</li>
+                    <li>4. Usa el botón "Copy" para que puedas copiar el texto y enviarlo a quien corresponda.</li>
                 </ol>
                 <p>Para Desencriptar:</p>
                 <ol>
                     <li>1. Copia el mensaje que te enviaron encriptado.</li>
-                    <li>2. Usa el botón Paste Text para pegar el mensaje.</li>
-                    <li>3. Preciona en el botón Decrypt.</li>
+                    <li>2. Usa el botón "Paste Text" para pegar el mensaje.</li>
+                    <li>3. Preciona en el botón "Decrypt".</li>
                     <li>4. El mensaje desencriptado estará disponible en la parte izquierda para que puedas leerlo.</li>
                 </ol>
-                <p>Usa el botón Nuevo para empezar de nuevo.</p>
+                <p>Usa el botón "New" para volver a empezar.</p>
             </div>
         </header>
         <main>
             <section id="ingresado">
                 <div class="caja-pegar">
-                    <button id="boton-pegar" onclick="pegar()">paste text</button>
+                    <button id="boton-pegar" onclick="pegar()">Paste text</button>
                 </div>
-                <div id="input">
+                <div id="caja-usuario">
                     <textarea  id="usuario" placeholder="Enter text here" required></textarea>
                 </div>
+                <div id="alerta">
+                    <p>🕴Only lowercase letters and no accents.</p>
+                </div>
                 <div id="caja-botones">
-                    <p class="parrafos">Only lowercase letters and no accents.</p>
                     <button type="submit" id="encriptar" onclick="encrypt();">Encrypt</button>
                     <button id="desencriptar" onclick="decrypt()">Decrypt</button>
                 </div>
@@ -58,8 +59,8 @@
                     <textarea id="textoNuevo" disabled></textarea>
                 </div>
                 <div id="botones-resultado">
-                    <button id="copiar" onclick="copiar()">Copiar</button>
-                    <button id="restablecer" onclick="reset()">Nuevo</button>
+                    <button id="copiar" onclick="copiar()">Copy</button>
+                    <button id="restablecer" onclick="reset()">New</button>
                 </div>
             </section>
             
