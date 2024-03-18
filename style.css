@@ -183,10 +183,10 @@ body{
 
 #botones-resultado{
     display: none;
-    margin-bottom: 200px;
+    margin-left: 25%;
 }
 
-#botones-resultado button{
+#copiar, #restablecer{
     background: #609ED4;
     color: white;
     border: none;
@@ -195,6 +195,10 @@ body{
     width: 30%;
     height: 20px;
     margin: 0 2% 0 2%;
+}
+
+#copiar:hover, #restablecer:hover{
+    font-size: 14px;
 }
 
 #rodapie{
@@ -213,6 +217,15 @@ body{
         width: 70%;
         margin: 0 auto;
     }
+
+    #caja-instrucciones{
+        display: inline-block;
+    }
+
+    #instructions{
+        margin-left: 170%;
+    }
+
 
     .parrafos{
         letter-spacing: 0;

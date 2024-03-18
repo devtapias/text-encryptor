@@ -8,7 +8,7 @@ function quitarMuneco(){
     var elementosSinDatos = document.querySelector('#sinresultado');
     var elementoConDatos = document.querySelector('#textoNuevo');
     var botones = document.querySelector('#botones-resultado');
-    botones.style.display = 'block';
+    botones.style.display = 'flex';
     elementosSinDatos.style.display = 'none';
     elementoConDatos.style.display = 'block';
 }
@@ -78,8 +78,13 @@ function pegar(){ //Botón de pegar texto.
 }
 
 function verInstrucciones(){
-    let instrucciones = document.querySelector('#informacion-instrucciones')
-    instrucciones.style.display = 'inline';
+    let instrucciones = document.querySelector('#informacion-instrucciones');
+    if (instrucciones.style.display = 'inline'){
+        instrucciones.style.display = 'none';
+    }else{
+        instrucciones.style.display = 'inline';
+    }
+    
 }
 
 function ocultarInstrucciones(){
